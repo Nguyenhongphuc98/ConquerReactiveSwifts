@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04CC79BA4394B375304D9C0E /* Pods_ConquerReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130012568391D1D8A8183DA4 /* Pods_ConquerReactiveSwift.framework */; };
+		A9532B8E23EAC25F00757E7A /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B8D23EAC25F00757E7A /* UserVC.swift */; };
+		A9532B9023EAC37900757E7A /* UserTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B8F23EAC37900757E7A /* UserTableView.swift */; };
+		A9532B9323EAC3AA00757E7A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */; };
+		A9532B9423EAC3AA00757E7A /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9532B9223EAC3AA00757E7A /* UserTableViewCell.xib */; };
+		A9532B9623EACA9F00757E7A /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B9523EACA9F00757E7A /* UserViewModel.swift */; };
+		A9532B9923EACB6E00757E7A /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B9823EACB6E00757E7A /* UserService.swift */; };
+		A9532B9B23EACBF900757E7A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B9A23EACBF900757E7A /* User.swift */; };
+		A9DF2B5A23E92DA100DC09AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF2B5923E92DA100DC09AB /* AppDelegate.swift */; };
+		A9DF2B5C23E92DA100DC09AB /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF2B5B23E92DA100DC09AB /* LoginVC.swift */; };
+		A9DF2B5F23E92DA100DC09AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2B5D23E92DA100DC09AB /* Main.storyboard */; };
+		A9DF2B6123E92DA200DC09AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2B6023E92DA200DC09AB /* Assets.xcassets */; };
+		A9DF2B6423E92DA200DC09AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2B6223E92DA200DC09AB /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		130012568391D1D8A8183DA4 /* Pods_ConquerReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConquerReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9532B8D23EAC25F00757E7A /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
+		A9532B8F23EAC37900757E7A /* UserTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableView.swift; sourceTree = "<group>"; };
+		A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		A9532B9223EAC3AA00757E7A /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		A9532B9523EACA9F00757E7A /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		A9532B9823EACB6E00757E7A /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		A9532B9A23EACBF900757E7A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A9DF2B5623E92DA100DC09AB /* ConquerReactiveSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConquerReactiveSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DF2B5923E92DA100DC09AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9DF2B5B23E92DA100DC09AB /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		A9DF2B5E23E92DA100DC09AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9DF2B6023E92DA200DC09AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9DF2B6323E92DA200DC09AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9DF2B6523E92DA200DC09AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B347F4B6F3BA1F474F667A45 /* Pods-ConquerReactiveSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConquerReactiveSwift.release.xcconfig"; path = "Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift.release.xcconfig"; sourceTree = "<group>"; };
+		D2895DAC172BA49C4E94F4BF /* Pods-ConquerReactiveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConquerReactiveSwift.debug.xcconfig"; path = "Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9DF2B5323E92DA100DC09AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04CC79BA4394B375304D9C0E /* Pods_ConquerReactiveSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B6D3B14A194B6F7CBB0FF96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2895DAC172BA49C4E94F4BF /* Pods-ConquerReactiveSwift.debug.xcconfig */,
+				B347F4B6F3BA1F474F667A45 /* Pods-ConquerReactiveSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5667DB05D1AB836124835F32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				130012568391D1D8A8183DA4 /* Pods_ConquerReactiveSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9532B8923EAC02500757E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9532B9A23EACBF900757E7A /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9532B8A23EAC02B00757E7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A9532B9523EACA9F00757E7A /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A9532B8B23EAC05000757E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9DF2B5B23E92DA100DC09AB /* LoginVC.swift */,
+				A9532B8D23EAC25F00757E7A /* UserVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9532B8C23EAC1E400757E7A /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				A9532B8F23EAC37900757E7A /* UserTableView.swift */,
+				A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */,
+				A9532B9223EAC3AA00757E7A /* UserTableViewCell.xib */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		A9532B9723EACB3100757E7A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A9532B9823EACB6E00757E7A /* UserService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A9DF2B4D23E92DA100DC09AB = {
+			isa = PBXGroup;
+			children = (
+				A9DF2B5823E92DA100DC09AB /* ConquerReactiveSwift */,
+				A9DF2B5723E92DA100DC09AB /* Products */,
+				2B6D3B14A194B6F7CBB0FF96 /* Pods */,
+				5667DB05D1AB836124835F32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9DF2B5723E92DA100DC09AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9DF2B5623E92DA100DC09AB /* ConquerReactiveSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DF2B5823E92DA100DC09AB /* ConquerReactiveSwift */ = {
+			isa = PBXGroup;
+			children = (
+				A9532B9723EACB3100757E7A /* Service */,
+				A9532B8C23EAC1E400757E7A /* Template */,
+				A9532B8B23EAC05000757E7A /* View */,
+				A9532B8A23EAC02B00757E7A /* ViewModel */,
+				A9532B8923EAC02500757E7A /* Model */,
+				A9DF2B5923E92DA100DC09AB /* AppDelegate.swift */,
+				A9DF2B5D23E92DA100DC09AB /* Main.storyboard */,
+				A9DF2B6023E92DA200DC09AB /* Assets.xcassets */,
+				A9DF2B6223E92DA200DC09AB /* LaunchScreen.storyboard */,
+				A9DF2B6523E92DA200DC09AB /* Info.plist */,
+			);
+			path = ConquerReactiveSwift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9DF2B5523E92DA100DC09AB /* ConquerReactiveSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DF2B6823E92DA200DC09AB /* Build configuration list for PBXNativeTarget "ConquerReactiveSwift" */;
+			buildPhases = (
+				8643C4B252455D6779600081 /* [CP] Check Pods Manifest.lock */,
+				A9DF2B5223E92DA100DC09AB /* Sources */,
+				A9DF2B5323E92DA100DC09AB /* Frameworks */,
+				A9DF2B5423E92DA100DC09AB /* Resources */,
+				31CF4D884777A9AF5E748475 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConquerReactiveSwift;
+			productName = ConquerReactiveSwift;
+			productReference = A9DF2B5623E92DA100DC09AB /* ConquerReactiveSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9DF2B4E23E92DA100DC09AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = CPU11716;
+				TargetAttributes = {
+					A9DF2B5523E92DA100DC09AB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = A9DF2B5123E92DA100DC09AB /* Build configuration list for PBXProject "ConquerReactiveSwift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9DF2B4D23E92DA100DC09AB;
+			productRefGroup = A9DF2B5723E92DA100DC09AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9DF2B5523E92DA100DC09AB /* ConquerReactiveSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9DF2B5423E92DA100DC09AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9532B9423EAC3AA00757E7A /* UserTableViewCell.xib in Resources */,
+				A9DF2B6423E92DA200DC09AB /* LaunchScreen.storyboard in Resources */,
+				A9DF2B6123E92DA200DC09AB /* Assets.xcassets in Resources */,
+				A9DF2B5F23E92DA100DC09AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31CF4D884777A9AF5E748475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8643C4B252455D6779600081 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConquerReactiveSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9DF2B5223E92DA100DC09AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9532B9923EACB6E00757E7A /* UserService.swift in Sources */,
+				A9532B9023EAC37900757E7A /* UserTableView.swift in Sources */,
+				A9532B9623EACA9F00757E7A /* UserViewModel.swift in Sources */,
+				A9DF2B5C23E92DA100DC09AB /* LoginVC.swift in Sources */,
+				A9532B9B23EACBF900757E7A /* User.swift in Sources */,
+				A9532B8E23EAC25F00757E7A /* UserVC.swift in Sources */,
+				A9DF2B5A23E92DA100DC09AB /* AppDelegate.swift in Sources */,
+				A9532B9323EAC3AA00757E7A /* UserTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9DF2B5D23E92DA100DC09AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DF2B5E23E92DA100DC09AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DF2B6223E92DA200DC09AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DF2B6323E92DA200DC09AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9DF2B6623E92DA200DC09AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9DF2B6723E92DA200DC09AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9DF2B6923E92DA200DC09AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2895DAC172BA49C4E94F4BF /* Pods-ConquerReactiveSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22G4R8NLZU;
+				INFOPLIST_FILE = ConquerReactiveSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nguyenhongphuc98.ConquerReactiveSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DF2B6A23E92DA200DC09AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B347F4B6F3BA1F474F667A45 /* Pods-ConquerReactiveSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 22G4R8NLZU;
+				INFOPLIST_FILE = ConquerReactiveSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nguyenhongphuc98.ConquerReactiveSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9DF2B5123E92DA100DC09AB /* Build configuration list for PBXProject "ConquerReactiveSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DF2B6623E92DA200DC09AB /* Debug */,
+				A9DF2B6723E92DA200DC09AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DF2B6823E92DA200DC09AB /* Build configuration list for PBXNativeTarget "ConquerReactiveSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DF2B6923E92DA200DC09AB /* Debug */,
+				A9DF2B6A23E92DA200DC09AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9DF2B4E23E92DA100DC09AB /* Project object */;
+}
