@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZD-yX-rAX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="***@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZD-yX-rAX">
                                 <rect key="frame" x="50.5" y="144" width="274" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="274" id="4OB-8d-OYE"/>
@@ -36,10 +36,10 @@
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qiO-Hj-DZQ" kind="presentation" id="rlc-Di-vj2"/>
+                                    <segue destination="qiO-Hj-DZQ" kind="show" id="2kk-QN-O6Q"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-G9-BSC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="more than 6 character" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQE-G9-BSC">
                                 <rect key="frame" x="50.5" y="191" width="274" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Bhw-fh-pak"/>
@@ -76,16 +76,27 @@
             <objects>
                 <viewController id="qiO-Hj-DZQ" customClass="UserVC" customModule="ConquerReactiveSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="25Z-Uy-Gs4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U9k-pb-GpN" customClass="UserTableView" customModule="ConquerReactiveSwift" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-y2-jPD">
+                                <rect key="frame" x="20" y="613" width="335" height="34"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Search With Action"/>
+                                <connections>
+                                    <segue destination="CkJ-tF-6rb" kind="show" id="YR2-mv-Vh8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="dcY-y2-jPD" secondAttribute="bottom" constant="20" id="1ca-T8-Nle"/>
+                            <constraint firstItem="dcY-y2-jPD" firstAttribute="leading" secondItem="25Z-Uy-Gs4" secondAttribute="leadingMargin" constant="4" id="97Z-3h-ELq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dcY-y2-jPD" secondAttribute="trailing" constant="4" id="GqM-MY-lJt"/>
                             <constraint firstItem="GNA-EU-uhB" firstAttribute="trailing" secondItem="U9k-pb-GpN" secondAttribute="trailing" id="KfK-sz-bOn"/>
                             <constraint firstItem="GNA-EU-uhB" firstAttribute="bottom" secondItem="U9k-pb-GpN" secondAttribute="bottom" id="baF-1d-RhD"/>
                             <constraint firstItem="U9k-pb-GpN" firstAttribute="top" secondItem="GNA-EU-uhB" secondAttribute="top" id="bqM-HW-uvp"/>
@@ -93,6 +104,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GNA-EU-uhB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0EO-vR-WdA"/>
                     <connections>
                         <outlet property="userTableView" destination="U9k-pb-GpN" id="QXU-nG-dpE"/>
                     </connections>
@@ -100,6 +112,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWZ-ZZ-ZkX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1852" y="124.58770614692655"/>
+        </scene>
+        <!--RepoVC-->
+        <scene sceneID="fN8-c4-9t1">
+            <objects>
+                <viewController id="CkJ-tF-6rb" customClass="RepoVC" customModule="ConquerReactiveSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EaZ-cL-60I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="search git repo" translatesAutoresizingMaskIntoConstraints="NO" id="01H-mx-cj5">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZj-qa-iOf" customClass="RepoTableView" customModule="ConquerReactiveSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="100" width="375" height="567"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="01H-mx-cj5" firstAttribute="trailing" secondItem="KNe-0x-gJq" secondAttribute="trailing" id="5In-Xy-FEv"/>
+                            <constraint firstItem="LZj-qa-iOf" firstAttribute="top" secondItem="01H-mx-cj5" secondAttribute="bottom" symbolic="YES" id="DLh-M0-ILt"/>
+                            <constraint firstItem="01H-mx-cj5" firstAttribute="leading" secondItem="KNe-0x-gJq" secondAttribute="leading" id="Dvf-rk-7Z7"/>
+                            <constraint firstItem="LZj-qa-iOf" firstAttribute="leading" secondItem="KNe-0x-gJq" secondAttribute="leading" id="MKF-y9-jDu"/>
+                            <constraint firstItem="01H-mx-cj5" firstAttribute="top" secondItem="KNe-0x-gJq" secondAttribute="top" id="QZf-mN-kJh"/>
+                            <constraint firstItem="LZj-qa-iOf" firstAttribute="trailing" secondItem="KNe-0x-gJq" secondAttribute="trailing" id="mnh-6w-RWc"/>
+                            <constraint firstItem="LZj-qa-iOf" firstAttribute="bottom" secondItem="KNe-0x-gJq" secondAttribute="bottom" id="w2D-vw-Szb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KNe-0x-gJq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BGS-fa-ozt"/>
+                    <connections>
+                        <outlet property="repoSearchBar" destination="01H-mx-cj5" id="g9E-FM-JrS"/>
+                        <outlet property="repoTableview" destination="LZj-qa-iOf" id="WA8-EL-P2J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI4-t3-bEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2652" y="124.58770614692655"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vaq-PP-ad1">

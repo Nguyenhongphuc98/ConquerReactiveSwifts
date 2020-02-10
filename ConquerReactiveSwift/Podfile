@@ -8,5 +8,6 @@ target 'ConquerReactiveSwift' do
   # Pods for ConquerReactiveSwift
 	pod 'ReactiveSwift', '~> 6.1'
   pod 'ReactiveCocoa', '~> 10.1'
+  pod 'SwiftyJSON', '~> 4.0'
 
 end

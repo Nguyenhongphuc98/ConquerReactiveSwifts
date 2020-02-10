@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ReactiveSwift
 
 class UserVC: UIViewController {
 
@@ -33,16 +34,13 @@ class UserVC: UIViewController {
                 }
         }
         
-        viewModel.isLoadchange
+        viewModel.users
             .signal
             .take(during: reactive.lifetime)
-            .observeValues { (change) in
-                if change {
-                    print("change")
-                    self.userTableView.users = self.viewModel.users
-                    self.userTableView.reloadData()
-                } else {
-                    print("no loading")
+            .observe(on: UIScheduler())
+            .observe { (users) in
+                if let us = users.value {
+                    self.userTableView.reloadData(u: us)
                 }
         }
         

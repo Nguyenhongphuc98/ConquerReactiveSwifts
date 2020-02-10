@@ -11,7 +11,7 @@ import UIKit
 class UserTableView: UIView {
     
     var tableView: UITableView!
-    var users: [User] = [User]()
+    var users: [UserProtocol] = [UserProtocol]()
 
     /*
     // Only override draw() if you perform custom drawing.
@@ -35,6 +35,7 @@ class UserTableView: UIView {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        //tableView.estimatedRowHeight = 65
         
         let views: [String: Any] = ["tableview": tableView]
         
@@ -52,7 +53,8 @@ class UserTableView: UIView {
         tableView.register(nib, forCellReuseIdentifier: "UserTableViewCell")
     }
     
-    func reloadData() {
+    func reloadData(u: [UserProtocol]) {
+        self.users = u
         tableView.reloadData()
     }
 }

@@ -8,7 +8,14 @@
 
 import UIKit
 
-class User: NSObject {
+protocol UserProtocol {
+    var name: String { get set }
+    
+    var username: String { get set }
+    
+}
+
+class User: NSObject, UserProtocol {
 
     var id: String
     

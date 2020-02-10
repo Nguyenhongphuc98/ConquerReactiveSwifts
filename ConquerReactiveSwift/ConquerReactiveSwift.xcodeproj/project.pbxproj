@@ -20,6 +20,13 @@
 		A9DF2B5F23E92DA100DC09AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2B5D23E92DA100DC09AB /* Main.storyboard */; };
 		A9DF2B6123E92DA200DC09AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2B6023E92DA200DC09AB /* Assets.xcassets */; };
 		A9DF2B6423E92DA200DC09AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DF2B6223E92DA200DC09AB /* LaunchScreen.storyboard */; };
+		A9DF932123F146AD002BAEA8 /* RepoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF932023F146AD002BAEA8 /* RepoVC.swift */; };
+		A9DF932623F149C1002BAEA8 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF932423F149C1002BAEA8 /* RepoTableViewCell.swift */; };
+		A9DF932723F149C1002BAEA8 /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9DF932523F149C1002BAEA8 /* RepoTableViewCell.xib */; };
+		A9DF932923F14B93002BAEA8 /* RepoTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF932823F14B93002BAEA8 /* RepoTableView.swift */; };
+		A9DF932B23F14D26002BAEA8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF932A23F14D26002BAEA8 /* Repository.swift */; };
+		A9DF932D23F15223002BAEA8 /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF932C23F15223002BAEA8 /* RepoService.swift */; };
+		A9DF932F23F159E9002BAEA8 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DF932E23F159E9002BAEA8 /* RepoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +45,13 @@
 		A9DF2B6023E92DA200DC09AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9DF2B6323E92DA200DC09AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9DF2B6523E92DA200DC09AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9DF932023F146AD002BAEA8 /* RepoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoVC.swift; sourceTree = "<group>"; };
+		A9DF932423F149C1002BAEA8 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		A9DF932523F149C1002BAEA8 /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
+		A9DF932823F14B93002BAEA8 /* RepoTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableView.swift; sourceTree = "<group>"; };
+		A9DF932A23F14D26002BAEA8 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A9DF932C23F15223002BAEA8 /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
+		A9DF932E23F159E9002BAEA8 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
 		B347F4B6F3BA1F474F667A45 /* Pods-ConquerReactiveSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConquerReactiveSwift.release.xcconfig"; path = "Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift.release.xcconfig"; sourceTree = "<group>"; };
 		D2895DAC172BA49C4E94F4BF /* Pods-ConquerReactiveSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConquerReactiveSwift.debug.xcconfig"; path = "Target Support Files/Pods-ConquerReactiveSwift/Pods-ConquerReactiveSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A9532B9A23EACBF900757E7A /* User.swift */,
+				A9DF932A23F14D26002BAEA8 /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A9532B9523EACA9F00757E7A /* UserViewModel.swift */,
+				A9DF932E23F159E9002BAEA8 /* RepoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -92,6 +108,7 @@
 			children = (
 				A9DF2B5B23E92DA100DC09AB /* LoginVC.swift */,
 				A9532B8D23EAC25F00757E7A /* UserVC.swift */,
+				A9DF932023F146AD002BAEA8 /* RepoVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -99,9 +116,8 @@
 		A9532B8C23EAC1E400757E7A /* Template */ = {
 			isa = PBXGroup;
 			children = (
-				A9532B8F23EAC37900757E7A /* UserTableView.swift */,
-				A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */,
-				A9532B9223EAC3AA00757E7A /* UserTableViewCell.xib */,
+				A9DF932323F14982002BAEA8 /* Repositories */,
+				A9DF932223F14976002BAEA8 /* User */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -110,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				A9532B9823EACB6E00757E7A /* UserService.swift */,
+				A9DF932C23F15223002BAEA8 /* RepoService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -147,6 +164,26 @@
 				A9DF2B6523E92DA200DC09AB /* Info.plist */,
 			);
 			path = ConquerReactiveSwift;
+			sourceTree = "<group>";
+		};
+		A9DF932223F14976002BAEA8 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A9532B8F23EAC37900757E7A /* UserTableView.swift */,
+				A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */,
+				A9532B9223EAC3AA00757E7A /* UserTableViewCell.xib */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A9DF932323F14982002BAEA8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A9DF932823F14B93002BAEA8 /* RepoTableView.swift */,
+				A9DF932423F149C1002BAEA8 /* RepoTableViewCell.swift */,
+				A9DF932523F149C1002BAEA8 /* RepoTableViewCell.xib */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +250,7 @@
 				A9DF2B6423E92DA200DC09AB /* LaunchScreen.storyboard in Resources */,
 				A9DF2B6123E92DA200DC09AB /* Assets.xcassets in Resources */,
 				A9DF2B5F23E92DA100DC09AB /* Main.storyboard in Resources */,
+				A9DF932723F149C1002BAEA8 /* RepoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,12 +305,18 @@
 			files = (
 				A9532B9923EACB6E00757E7A /* UserService.swift in Sources */,
 				A9532B9023EAC37900757E7A /* UserTableView.swift in Sources */,
+				A9DF932F23F159E9002BAEA8 /* RepoViewModel.swift in Sources */,
 				A9532B9623EACA9F00757E7A /* UserViewModel.swift in Sources */,
+				A9DF932623F149C1002BAEA8 /* RepoTableViewCell.swift in Sources */,
 				A9DF2B5C23E92DA100DC09AB /* LoginVC.swift in Sources */,
 				A9532B9B23EACBF900757E7A /* User.swift in Sources */,
+				A9DF932123F146AD002BAEA8 /* RepoVC.swift in Sources */,
+				A9DF932923F14B93002BAEA8 /* RepoTableView.swift in Sources */,
+				A9DF932D23F15223002BAEA8 /* RepoService.swift in Sources */,
 				A9532B8E23EAC25F00757E7A /* UserVC.swift in Sources */,
 				A9DF2B5A23E92DA100DC09AB /* AppDelegate.swift in Sources */,
 				A9532B9323EAC3AA00757E7A /* UserTableViewCell.swift in Sources */,
+				A9DF932B23F14D26002BAEA8 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

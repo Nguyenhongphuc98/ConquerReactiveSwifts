@@ -2,20 +2,24 @@ PODS:
   - ReactiveCocoa (10.2.0):
     - ReactiveSwift (~> 6.2)
   - ReactiveSwift (6.2.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - ReactiveCocoa (~> 10.1)
   - ReactiveSwift (~> 6.1)
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - ReactiveCocoa
     - ReactiveSwift
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   ReactiveCocoa: a123c42f449c552460a4ee217dd49c76a17c8204
   ReactiveSwift: 3dc8800378110b13d40b46ab362afa9f6bcffc6c
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: be62f0036c29899e91eafa5950407dbccec01ab9
+PODFILE CHECKSUM: d78c8309155275b21793eb98ac26b6c8bfbd4e88
 
 COCOAPODS: 1.8.4

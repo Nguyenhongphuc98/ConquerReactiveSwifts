@@ -12,8 +12,7 @@ import ReactiveSwift
 class UserViewModel {
 
     var isLoading: MutableProperty<Bool> = MutableProperty(false)
-    var isLoadchange: MutableProperty<Bool> = MutableProperty(false)
-    var users: [User] = [User]()
+    var users: MutableProperty<[UserProtocol]> = MutableProperty([UserProtocol]())
     
     private var service: UserService = UserService()
     
@@ -22,14 +21,16 @@ class UserViewModel {
         
         self.service
             .fetchUsers()
-            .start(Signal<[User], Error>.Observer { value in
-                print("receive \(value)")
+            .start(Signal<[User], Error>.Observer (value: { newValue in
                 
-                if let userss = value.value {
-                    self.users = userss
-                    self.isLoading.value = false
-                    self.isLoadchange.value = true
-                }
-            })
+                //loai bo nil va setup data cho view model
+                self.users.value = newValue.compactMap({ u -> User? in
+                    return u
+                })
+                self.isLoading.value = false
+            }, failed: { error in
+                print(error.localizedDescription)
+                
+            }, completed: {print("load complete")}))
     }
 }

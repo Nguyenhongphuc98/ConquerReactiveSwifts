@@ -24,8 +24,8 @@ class UserTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    public func setUpView(user: User) {
+    public func setUpView(user: UserProtocol) {
         displayNameLabel.text = user.name
-        accountLabel.text = "@" + user.email
+        accountLabel.text = "@" + user.username
     }
 }
