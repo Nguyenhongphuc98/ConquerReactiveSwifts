@@ -53,21 +53,30 @@ class LoginVC: UIViewController {
 //        let disposeable = boolSignal.observe(observer2)
 //        disposeable?.dispose()
         
-        //su dung signalProducer
-        //tao 1 observer
-//        let observer = Signal<String, Error>.Observer(value: { (value) in
-//            print("receive \(value)")
+//        //su dung signalProducer
+//        //tao 1 observer
+//        let observer = Signal<String, Error>.Observer({event in
+//            switch event {
+//            case let .value(v):
+//                print(v)
+//            case .completed:
+//                print("complete")
+//            default:
+//                break
+//            }
+//            
 //        })
 //
 //        //tao signalProducer
 //        let signalProducer: SignalProducer<String, Error> = SignalProducer {(observer, lifetime) in
 //            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 //                observer.send(value: "hello")
+//                observer.sendCompleted()
 //            }
 //        }
 //
 //        signalProducer.start(observer)
-        
+//        
         //interaction with UI
 //        let signal = usernameTextField.rac_textSignal()
 //        let observer = Signal<Bool, Never>.Observer(value: { (textInput) in

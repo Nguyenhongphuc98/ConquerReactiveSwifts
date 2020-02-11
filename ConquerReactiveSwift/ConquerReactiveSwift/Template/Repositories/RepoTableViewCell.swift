@@ -27,7 +27,7 @@ class RepoTableViewCell: UITableViewCell {
     
     public func setUpView(repo: RepoProtocol) {
         nameLabel.text = repo.name
-        desLabel.text = "@" + repo.des
+        desLabel.text = repo.des
         languageLabel.text = repo.language
     }
 }

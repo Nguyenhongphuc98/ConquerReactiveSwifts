@@ -50,7 +50,11 @@ class RepoVC: UIViewController {
                 }
             }))
         
-        let searchSignal = repoSearchBar.reactive.continuousTextValues.compactMap({$0})
+        let searchSignal = repoSearchBar
+            .reactive
+            .continuousTextValues
+            .compactMap({$0})
+
         viewModel.fetchRepos(textSignal: searchSignal)
     }
     

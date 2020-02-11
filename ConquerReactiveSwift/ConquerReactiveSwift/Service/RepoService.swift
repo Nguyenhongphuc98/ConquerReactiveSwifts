@@ -25,31 +25,36 @@ class RepoService {
     func fetchSignalProducer(text: String, input: String) -> SignalProducer<[Repository], Error> {
         
         return SignalProducer { observer, disposable in
+            
             if var urlComponents = URLComponents(string: self.urlString) {
-                
+
                 urlComponents.query = "q=\(text)"
-                
+
                 guard let url = urlComponents.url else {
                     print("can't init url in repo service")
                     return
                 }
-                
+
                 let task = self.session.dataTask(with: url) { (data, response, error) in
                     if error != nil {
                         observer.send(error: error!)
                         return
                     }
-                    
+
+                    if let httpResponse = response as? HTTPURLResponse {
+                        print("loading code \(httpResponse.statusCode)")
+                    }
                     guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
                         print("status not OK")
+                        observer.sendCompleted()
                         return
                     }
-                    
+
                     guard let mineType = response?.mimeType, mineType == "application/json" else {
                         print("wrong mine type")
                         return
                     }
-                    
+
                     //xu ly data neu khong bi loi va dung format
                     do {
                         let json = try JSON(data: data!)
@@ -59,16 +64,16 @@ class RepoService {
                                         des: r["description"].stringValue,
                                         lang: r["language"].stringValue)
                         }
-                        
+
                         observer.send(value: repos)
+                        observer.sendCompleted()
                     } catch {
                         observer.send(error: error)
                     }
-                    observer.sendCompleted()
                 }
-                
+
                 task.resume()
-            } 
+            }
         }
     }
 }
