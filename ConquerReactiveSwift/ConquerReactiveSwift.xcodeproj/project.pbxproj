@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04CC79BA4394B375304D9C0E /* Pods_ConquerReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130012568391D1D8A8183DA4 /* Pods_ConquerReactiveSwift.framework */; };
+		A94C3ACC23F298020059CB93 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C3ACB23F298020059CB93 /* Enum.swift */; };
 		A9532B8E23EAC25F00757E7A /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B8D23EAC25F00757E7A /* UserVC.swift */; };
 		A9532B9023EAC37900757E7A /* UserTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B8F23EAC37900757E7A /* UserTableView.swift */; };
 		A9532B9323EAC3AA00757E7A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		130012568391D1D8A8183DA4 /* Pods_ConquerReactiveSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConquerReactiveSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94C3ACB23F298020059CB93 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		A9532B8D23EAC25F00757E7A /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		A9532B8F23EAC37900757E7A /* UserTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableView.swift; sourceTree = "<group>"; };
 		A9532B9123EAC3AA00757E7A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 				130012568391D1D8A8183DA4 /* Pods_ConquerReactiveSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A94C3ACA23F297E30059CB93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A94C3ACB23F298020059CB93 /* Enum.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A9532B8923EAC02500757E7A /* Model */ = {
@@ -152,6 +162,7 @@
 		A9DF2B5823E92DA100DC09AB /* ConquerReactiveSwift */ = {
 			isa = PBXGroup;
 			children = (
+				A94C3ACA23F297E30059CB93 /* Utilities */,
 				A9532B9723EACB3100757E7A /* Service */,
 				A9532B8C23EAC1E400757E7A /* Template */,
 				A9532B8B23EAC05000757E7A /* View */,
@@ -313,6 +324,7 @@
 				A9DF932123F146AD002BAEA8 /* RepoVC.swift in Sources */,
 				A9DF932923F14B93002BAEA8 /* RepoTableView.swift in Sources */,
 				A9DF932D23F15223002BAEA8 /* RepoService.swift in Sources */,
+				A94C3ACC23F298020059CB93 /* Enum.swift in Sources */,
 				A9532B8E23EAC25F00757E7A /* UserVC.swift in Sources */,
 				A9DF2B5A23E92DA100DC09AB /* AppDelegate.swift in Sources */,
 				A9532B9323EAC3AA00757E7A /* UserTableViewCell.swift in Sources */,

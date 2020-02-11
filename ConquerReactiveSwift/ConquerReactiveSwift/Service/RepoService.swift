@@ -46,12 +46,15 @@ class RepoService {
                     }
                     guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
                         print("status not OK")
-                        observer.sendCompleted()
+                        let err = DownloadError.STATUS_CODE
+                        observer.send(error: err)
                         return
                     }
 
                     guard let mineType = response?.mimeType, mineType == "application/json" else {
                         print("wrong mine type")
+                        let err = DownloadError.VALUE_TYPE
+                        observer.send(error: err)
                         return
                     }
 
@@ -66,10 +69,10 @@ class RepoService {
                         }
 
                         observer.send(value: repos)
-                        observer.sendCompleted()
                     } catch {
                         observer.send(error: error)
                     }
+                     observer.sendCompleted()
                 }
 
                 task.resume()

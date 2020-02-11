@@ -40,6 +40,7 @@ class RepoVC: UIViewController {
         
         viewModel.isLoading
             .signal
+            .observe(on: UIScheduler())
             .observe(Signal<Bool, Never>.Observer(value: { (loading) in
                 if loading {
                     self.progess.isHidden = false
@@ -47,6 +48,17 @@ class RepoVC: UIViewController {
                 } else {
                     self.progess.isHidden = true
                     print("loaded")
+                }
+            }))
+        
+        viewModel.isLoadError
+            .signal
+            .observe(on: UIScheduler())
+            .observe(Signal<Bool, Never>.Observer(value: { (err) in
+                if err {
+                    let alert = UIAlertController(title: "Github", message: "request bị giới hạn, thử lại sau", preferredStyle: UIAlertController.Style.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }))
         
